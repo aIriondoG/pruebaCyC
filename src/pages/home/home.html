@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button full (click)="getPicture()">Foto!</button>
+  <button ion-button full (click)="sendEmail()">Email!</button>
+  <ion-card>
+    <ion-card-header>Image</ion-card-header>
+    <ion-card-content>
+      <!--<img [src]="image" *ngIf="image"/>-->
+      <img [src]="currentImage" *ngIf="currentImage"/>
+    </ion-card-content>
+  </ion-card>
+  <!--<img [src]="image" *ngIf="image"/>-->
+</ion-content>
